@@ -27,7 +27,7 @@ function App() {
     let lat, long;
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=0638f7d3edfaea9be1580346fabd219b`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid={APIKEY}`
       );
       if (!response.ok) {
         throw new Error("Wrong city name can't get the data");
